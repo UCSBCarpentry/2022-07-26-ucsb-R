@@ -417,7 +417,6 @@ please preview your site before committing, and make sure to run
     <li> <a href="https://cloud.r-project.org/">R version 4.1 or greater</a> </li>
     <li> <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40.html">Rtools4.0</a> if you are a Windows user.This is crucial for packages to build and work correctly in Rstudio </li>
     <li> Mac users should check their <a href="https://developer.apple.com/xcode/">Xcode</a> versions or install the update from the App Store (free) </li>
-  </u1>
 
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
