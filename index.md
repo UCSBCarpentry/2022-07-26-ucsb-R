@@ -34,26 +34,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 
 {% comment %}
 8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
 
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
 8< ============================= until here ==================
 {% endcomment %}
 
@@ -417,7 +398,6 @@ please preview your site before committing, and make sure to run
 {% endcomment %}
 
 <h2 id="setup">Setup</h2>
-
 <p>
   To participate in a
   {% if site.carpentry == "swc" %}
@@ -431,6 +411,14 @@ please preview your site before committing, and make sure to run
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
+
+<ul style="list-style-type:circle">
+<li> <a href="https://www.rstudio.com/products/rstudio/download/">Rstudio version 1.4 or greater</a> </li>
+<li> <a href="https://cloud.r-project.org/">R version 4.1 or greater</a> </li>
+<li> <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40.html">Rtools4.0</a> if you are a Windows user.This is crucial for packages to build and work correctly in Rstudio </li>
+<li> Mac users should check their <a href="https://developer.apple.com/xcode/">Xcode</a> versions or install the update from the App Store (free) </li>
+</u1>
+
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
