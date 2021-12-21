@@ -132,27 +132,8 @@ find some, you can report and fix bugs.
 
 Because R is open source and is supported by a large community of developers and
 users, there is a very large selection of third-party add-on packages which are
-freely available to extend R's native capabilities.
-
-
-<figure>
-<div class="row">
-<div class="col-md-6">
-```{r rstudio-analogy, echo = FALSE, fig.show = "hold", out.width = "100%", fig.alt = "RStudio extends what R can do, and makes it easier to write R code and interact with R."}
-knitr::include_graphics("../fig/r-manual.jpeg")
-```
-</div>
-<div class="col-md-6">
-```{r rstudio-analogy-2, echo = FALSE, fig.show = "hold", fig.alt = "automatic car gear shift representing the ease of RStudio", out.width="100%"}
-knitr::include_graphics("../fig/r-automatic.jpeg")
-```
-</div>
-</div>
-<figcaption>
-RStudio extends what R can do, and makes it easier to write R code and interact
-with R. <a href="https://unsplash.com/photos/D19rXKDUPYM">Left photo credit</a>; <a href="https://unsplash.com/photos/Wec3M4dY_LE">Right photo credit</a>.
-</figcaption>
-</figure>
+freely available to extend R's native capabilities. RStudio extends what R can do, and makes it easier to write R code and interact
+with R.
 
 ## Introduction to RStudio
 
