@@ -5,7 +5,6 @@ title: "Introduction to R and RStudio"
 teaching: 20
 exercises: 5
 questions:
-- "Why use R?"
 - "How to find your way around RStudio?"
 - "How to interact with R?"
 - "How to install packages?"
@@ -24,6 +23,9 @@ keypoints:
 - "Use `install.packages()` to install packages (libraries)."
 source: Rmd
 ---
+
+
+
 
 ## Motivation
 
@@ -44,96 +46,6 @@ Please ensure you have the latest version of R and RStudio installed on your mac
 
 - [Download and install the latest version of R here](https://www.r-project.org/)
 - [Download and install RStudio here](https://www.rstudio.com/)
-
-## What is R? What is RStudio?
-
-The term "`R`" is used to refer to both the programming language and the
-software that interprets the scripts written using it.
-
-[RStudio](https://rstudio.com) is currently a very popular way to not only write
-your R scripts but also to interact with the R software. To function correctly,
-RStudio needs R and therefore both need to be installed on your computer.
-
-To make it easier to interact with R, we will use RStudio. RStudio is the most
-popular IDE (Integrated Development Environment) for R. An IDE is a piece of
-software that provides
-tools to make programming easier.
-
-
-## Why learn R?
-
-### R does not involve lots of pointing and clicking, and that's a good thing
-
-The learning curve might be steeper than with other software, but with R, the
-results of your analysis do not rely on remembering a succession of pointing
-and clicking, but instead on a series of written commands, and that's a good
-thing! So, if you want to redo your analysis because you collected more data,
-you don't have to remember which button you clicked in which order to obtain
-your results; you just have to run your script again.
-
-Working with scripts makes the steps you used in your analysis clear, and the
-code you write can be inspected by someone else who can give you feedback and
-spot mistakes.
-
-Working with scripts forces you to have a deeper understanding of what you are
-doing, and facilitates your learning and comprehension of the methods you use.
-
-### R code is great for reproducibility
-
-Reproducibility is when someone else (including your future self) can obtain the
-same results from the same dataset when using the same analysis.
-
-R integrates with other tools to generate manuscripts from your code. If you
-collect more data, or fix a mistake in your dataset, the figures and the
-statistical tests in your manuscript are updated automatically.
-
-An increasing number of journals and funding agencies expect analyses to be
-reproducible, so knowing R will give you an edge with these requirements.
-
-### R is interdisciplinary and extensible
-
-With 10,000+ packages that can be installed to extend its capabilities, R
-provides a framework that allows you to combine statistical approaches from many
-scientific disciplines to best suit the analytical framework you need to analyze
-your data. For instance, R has packages for image analysis, GIS, time series,
-population genetics, and a lot more.
-
-### R works on data of all shapes and sizes
-
-The skills you learn with R scale easily with the size of your dataset. Whether
-your dataset has hundreds or millions of lines, it won't make much difference to
-you.
-
-R is designed for data analysis. It comes with special data structures and data
-types that make handling of missing data and statistical factors convenient.
-
-R can connect to spreadsheets, databases, and many other data formats, on your
-computer or on the web.
-
-### R produces high-quality graphics
-
-The plotting functionalities in R are endless, and allow you to adjust any
-aspect of your graph to convey most effectively the message from your data.
-
-### R has a large and welcoming community
-
-Thousands of people use R daily. Many of them are willing to help you through
-mailing lists and websites such as [Stack Overflow](https://stackoverflow.com/),
-or on the [RStudio community](https://community.rstudio.com/). Questions which
-are backed up with [short, reproducible code
-snippets](https://www.tidyverse.org/help/) are more likely to attract
-knowledgeable responses.
-
-### Not only is R free, but it is also open-source and cross-platform
-
-Anyone can inspect the source code to see how R works. Because of this
-transparency, there is less chance for mistakes, and if you (or someone else)
-find some, you can report and fix bugs.
-
-Because R is open source and is supported by a large community of developers and
-users, there is a very large selection of third-party add-on packages which are
-freely available to extend R's native capabilities. RStudio extends what R can do, and makes it easier to write R code and interact
-with R.
 
 ## Introduction to RStudio
 
@@ -183,12 +95,12 @@ interactive R console.
 >
 > RStudio offers you great flexibility in running code from within the editor
 > window. There are buttons, menu choices, and keyboard shortcuts. To run the
-> current line, you can
+> current line, you can 
 >
-> 1. click on the `Run` button above the editor panel, or
-> 2. select "Run Lines" from the "Code" menu, or
+> 1. click on the `Run` button above the editor panel, or 
+> 2. select "Run Lines" from the "Code" menu, or 
 > 3. hit <kbd>Ctrl</kbd>+<kbd>Enter</kbd> in Windows,
-> <kbd>Ctrl</kbd>+<kbd>Return</kbd> in Linux,
+> <kbd>Ctrl</kbd>+<kbd>Return</kbd> in Linux, 
 > or <kbd>&#8984;</kbd>+<kbd>Return</kbd> on OS X.
 > (This shortcut can also be seen by hovering
 > the mouse over the button). To run a block of code, select it and then `Run`.
@@ -208,11 +120,9 @@ file. This console in RStudio is the same as the one you would get if
 you typed in `R` in your command-line environment.
 
 The first thing you will see in the R interactive session is a bunch
-of information, followed by a ">" and a blinking cursor. In many ways
-this is similar to the shell environment you learned about during the
-shell lessons: it operates on the same idea of a "Read, evaluate,
-print loop": you type in commands, R tries to execute them, and then
-returns a result.
+of information, followed by a ">" and a blinking cursor. When you are running
+a section of your code, this is the location where R will first read your code,
+attempt to execute them, and then returns a result.
 
 ## Using R as a calculator
 
@@ -544,7 +454,7 @@ The right hand side is *fully evaluated* before the assignment occurs.
 > What will be the value of each  variable  after each
 > statement in the following program?
 >
->
+> 
 > ~~~
 > mass <- 47.5
 > age <- 122
@@ -555,21 +465,21 @@ The right hand side is *fully evaluated* before the assignment occurs.
 >
 > > ## Solution to challenge 1
 > >
-> >
+> > 
 > > ~~~
 > > mass <- 47.5
 > > ~~~
 > > {: .language-r}
 > > This will give a value of 47.5 for the variable mass
 > >
-> >
+> > 
 > > ~~~
 > > age <- 122
 > > ~~~
 > > {: .language-r}
 > > This will give a value of 122 for the variable age
 > >
-> >
+> > 
 > > ~~~
 > > mass <- mass * 2.3
 > > ~~~
@@ -577,7 +487,7 @@ The right hand side is *fully evaluated* before the assignment occurs.
 > > This will multiply the existing value of 47.5 by 2.3 to give a new value of
 > > 109.25 to the variable mass.
 > >
-> >
+> > 
 > > ~~~
 > > age <- age - 20
 > > ~~~
@@ -596,14 +506,14 @@ The right hand side is *fully evaluated* before the assignment occurs.
 > > ## Solution to challenge 2
 > >
 > > One way of answering this question in R is to use the `>` to set up the following:
-> >
+> > 
 > > ~~~
 > > mass > age
 > > ~~~
 > > {: .language-r}
-> >
-> >
-> >
+> > 
+> > 
+> > 
 > > ~~~
 > > [1] TRUE
 > > ~~~
@@ -639,7 +549,7 @@ symbol used in the community. So the recommendation is to use `<-`.
 > ## Challenge 3
 >
 > Which of the following are valid R variable names?
->
+> 
 > ~~~
 > min_height
 > max.height
@@ -655,7 +565,7 @@ symbol used in the community. So the recommendation is to use `<-`.
 > > ## Solution to challenge 3
 > >
 > > The following can be used as R variables:
-> >
+> > 
 > > ~~~
 > > min_height
 > > max.height
@@ -665,7 +575,7 @@ symbol used in the community. So the recommendation is to use `<-`.
 > > {: .language-r}
 > >
 > > The following creates a hidden variable:
-> >
+> > 
 > > ~~~
 > > .mass
 > > ~~~
@@ -675,7 +585,7 @@ symbol used in the community. So the recommendation is to use `<-`.
 > > beginning of variable names unless you intend your variables to be hidden.
 > >
 > > The following will not be able to be used to create a variable
-> >
+> > 
 > > ~~~
 > > _age
 > > min-length
@@ -722,7 +632,7 @@ It's important to note that we only need to install the R package on our compute
 > > ## Solution to challenge 4
 > >
 > > We would use the following R code to install the `ggplot2` package:
-> >
+> > 
 > > ~~~
 > > install.packages("ggplot2")
 > > ~~~
@@ -768,12 +678,12 @@ The following objects are masked from 'package:base':
 
 > ## Challenge 5
 >
-> Which of the following could we use to load the `ggplot2` package? (Select all that apply.)  
->
-> a) install.packages("ggplot2")  
-> b) library("ggplot2")  
-> c) library(ggplot2)  
-> d) library(ggplo2)  
+> Which of the following could we use to load the `ggplot2` package? (Select all that apply.)
+> 
+> a) install.packages("ggplot2")
+> b) library("ggplot2")
+> c) library(ggplot2)
+> d) library(ggplo2)
 >
 > > ## Solution to challenge 5
 > >
@@ -785,7 +695,7 @@ The following objects are masked from 'package:base':
 > >
 > > Note: It is more common for coders to *not use quotation* marks when loading an R package (i.e., answer c).
 > >
-> >
+> > 
 > > ~~~
 > > library(ggplot2)
 > > ~~~
