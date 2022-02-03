@@ -13,8 +13,8 @@ humandate: "Feb 15, 17, & 18  2022"    # human-readable dates for the workshop (
 humantime: "4:00 pm - 7:00 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-02-15      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-02-18        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Kristi Liu", "Amanda Ho"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Kat Le", "Sam Csik"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Kristi Liu", "Dave Hunter"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Sam Csik", "Amanda Ho", "Kat Le", "Sara Orofino"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["library-collaboratory@ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2022-02-04-ucsb-R-online # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite: 250524444357  # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -412,6 +412,10 @@ please preview your site before committing, and make sure to run
   workshop,
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
+
+  Please refer to this <a href= "https://datacarpentry.org/r-socialsci/setup.html">setup page</a> for detailed install instructions.  
+
+At the end of the setup page, when you open the <a href= "https://datacarpentry.org/r-socialsci/data/SAFI.json">.json data download</a> link, right click and save onto your desktop or other acessible location. The data file should be named SAFI.json.
 </p>
 
   <ul style="list-style-type:circle">
@@ -419,7 +423,12 @@ please preview your site before committing, and make sure to run
     <li> <a href="https://cloud.r-project.org/">R version 4.1 or greater</a> </li>
     <li> <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40.html">Rtools4.0</a> if you are a Windows user.This is crucial for packages to build and work correctly in Rstudio </li>
     <li> Mac users should check their <a href="https://developer.apple.com/xcode/">Xcode</a> versions or install the update from the App Store (free) </li>
-
+    <li> After installing R and RStudio, you need to install the tidyverse and here packages.  
+      After starting RStudio, at the console type:
+      <strong>install.packages("tidyverse")</strong>
+      followed by the enter key. Once this has installed, type:
+      <strong>install.packages("here")</strong>
+      followed by the enter key. Both packages should now be installed. </li>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
