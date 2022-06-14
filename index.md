@@ -37,7 +37,7 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 8< ============================= until here ==================
 {% endcomment %}
 
-<h2><strong>Registration for this workshop opens on Friday, January 21st at 8:00am PST</strong></h2>
+<h2><strong>Registration for this workshop opens on Friday, July 1st at 8:00am PST</strong></h2>
 <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Feb+15+SEEDS+R&iso=20220121T08&p1=1050">Check what time registration opens in your time
 zone</a>
 
@@ -141,9 +141,7 @@ address.
   <strong>Where:</strong>
   {{page.address}}.
   Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  This workshop will support in-person and remote, online attendace. If you register as an in-person attendeee, the workshop will take place at Davidson Library, UCEN Rd, Santa Barbara, CA. If you register as a remote attendeee, the instructors will provide you with the information you will need to connect to this meeting.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
@@ -413,7 +411,7 @@ please preview your site before committing, and make sure to run
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 
-  Please refer to this <a href= "https://datacarpentry.org/r-socialsci/setup.html">setup page</a> for detailed install instructions.  
+  Please refer to this <a href= "https://ucsbcarpentry.github.io/2022-07-26-ucsb-R/setup.html">setup page</a> for detailed install instructions.  
 
 At the end of the setup page, when you open the <a href= "https://datacarpentry.org/r-socialsci/data/SAFI.json">.json data download</a> link, right click and save onto your desktop or other acessible location. The data file should be named SAFI.json.
 </p>
