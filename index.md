@@ -13,8 +13,8 @@ humandate: "June 26 & 28, 2022"    # human-readable dates for the workshop (e.g.
 humantime: "9:30 am - 12:30 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2022-06-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2022-06-28        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Amanda Ho", "Chris Kibler"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Helper 1", "Helper 2", "Helper 3"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Dave Hunter", "Amanda Ho", "Chris Kibler"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["library-collaboratory@ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://ucsbcarpentry.github.io/2022-07-26-ucsb-R/ # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite: 362635792417  # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -97,6 +97,10 @@ the pitch.
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
+To practice the skills you will be learning in this workshop, we highly recommend registering for either of our advanced topics in R workshops: 
+- Intro to Geospatial Raster and Vector Data with R
+- Machine Learning for Tabular Data in R
+
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
@@ -138,10 +142,14 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  This workshop will support in-person and remote, online attendace. If you register as an in-person attendeee, the workshop will take place at Davidson Library, UCEN Rd, Santa Barbara, CA. If you register as a remote attendeee, the instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Where:This workshop will support in-person and remote, online attendance.   
+  If you register as a remote attendeee,
+  the instructors will provide you with the information you will need to connect to this meeting.   
+  
+  If you register as an in-person attendeee, the workshop will take place at   
+  Davidson Library, UCEN Rd, Santa Barbara, CA.   
+  
+  We acknowledge that this University system was founded upon exclusions and erasures of many Indigenous peoples, including those on whose lands UCSB is located: the villages and unceded lands of the <a href= "https://native-land.ca/maps/territories/chumash/">Chumash people</a>. You may read more on <a href= "https://www.csusm.edu/cicsc/land.pdf">Land Acknowlegment</a>
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
@@ -412,8 +420,6 @@ please preview your site before committing, and make sure to run
   In addition, you will need an up-to-date web browser.
 
   Please refer to this <a href= "https://ucsbcarpentry.github.io/2022-07-26-ucsb-R/setup.html">setup page</a> for detailed install instructions.  
-
-At the end of the setup page, when you open the <a href= "https://datacarpentry.org/r-socialsci/data/SAFI.json">.json data download</a> link, right click and save onto your desktop or other acessible location. The data file should be named SAFI.json.
 </p>
 
   <ul style="list-style-type:circle">
