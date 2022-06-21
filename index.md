@@ -141,8 +141,8 @@ address.
 {% assign online = "false" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
-<p id="where">
-  <strong>Where:This workshop will support in-person and remote, online attendance.   
+  <strong>Where:</strong>
+  This workshop will support in-person and remote, online attendance.   
   If you register as a remote attendeee,
   the instructors will provide you with the information you will need to connect to this meeting.   
   
