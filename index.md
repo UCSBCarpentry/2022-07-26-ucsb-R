@@ -97,8 +97,8 @@ the pitch.
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
-To practice the skills you will be learning in this workshop, we highly recommend registering for either of our advanced topics in R workshops: 
-- Intro to Geospatial Raster and Vector Data with R
+To practice the skills you will be learning in this workshop, we highly recommend registering for either of our advanced topics in R workshops (will be updated with links): 
+- Intro to Geospatial Raster and Vector Data with R 
 - Machine Learning for Tabular Data in R
 
 {% include dc/intro.html %}
@@ -141,6 +141,7 @@ address.
 {% assign online = "false" %}
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
+<p id="where">
   <strong>Where:</strong>
   This workshop will support in-person and remote, online attendance.   
   If you register as a remote attendeee,
@@ -338,8 +339,8 @@ in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
 change the value of `carpentry` to `incubator`.
 </div>
 {% else %}
-<p><a href=" ">Pre-workshop Survey</a></p>
-<p><a href=" ">Post-workshop Survey</a></p>
+<p><a href="https://ucsb.co1.qualtrics.com/jfe/form/SV_9RIG1kcwEvSTQTY">Pre-workshop Survey</a></p>
+<p><a href="https://ucsb.co1.qualtrics.com/jfe/form/SV_9AJwIjSYRmQFutM">Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
