@@ -97,9 +97,9 @@ the pitch.
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
-To practice the skills you will be learning in this workshop, we highly recommend registering for either of our advanced topics in R workshops (will be updated with links): 
-- Intro to Geospatial Raster and Vector Data with R 
-- Machine Learning for Tabular Data in R
+To practice the skills you will be learning in this workshop, we highly recommend registering for either of our advanced topics in R workshops: 
+- [Intro to Geospatial Raster and Vector Data with R](https://ucsbcarpentry.github.io/2022-08-09-ucsb-r-geospatial/)
+- [Machine Learning for Tabular Data in R](https://ucsbcarpentry.github.io/2022-08-16-ucsb-machlearn-r/)
 
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
