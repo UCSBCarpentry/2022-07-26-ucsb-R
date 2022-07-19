@@ -423,17 +423,6 @@ please preview your site before committing, and make sure to run
   Please refer to this <a href= "https://ucsbcarpentry.github.io/2022-07-26-ucsb-R/setup.html">setup page</a> for detailed install instructions.  
 </p>
 
-  <ul style="list-style-type:circle">
-    <li> <a href="https://www.rstudio.com/products/rstudio/download/">Rstudio version 1.4 or greater</a> </li>
-    <li> <a href="https://cloud.r-project.org/">R version 4.1 or greater</a> </li>
-    <li> <a href="https://cran.r-project.org/bin/windows/Rtools/rtools40.html">Rtools4.0</a> if you are a Windows user.This is crucial for packages to build and work correctly in Rstudio </li>
-    <li> Mac users should check their <a href="https://developer.apple.com/xcode/">Xcode</a> versions or install the update from the App Store (free) </li>
-    <li> After installing R and RStudio, you need to install the tidyverse and here packages.  
-      After starting RStudio, at the console type:
-      <strong>install.packages("tidyverse")</strong>
-      followed by the enter key. Once this has installed, type:
-      <strong>install.packages("here")</strong>
-      followed by the enter key. Both packages should now be installed. </li>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
@@ -458,15 +447,3 @@ to include the relevant installation instrucctions.
 These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
