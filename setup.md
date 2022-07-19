@@ -19,7 +19,7 @@ see the [**`tidyverse`** website](https://tidyverse.tidyverse.org) for more deta
 Follow the instructions below for your operating system, and then follow the 
 instructions to install **`tidyverse`**.
 
-### Windows
+## Windows
 
 #### If you already have R and RStudio installed
 
@@ -52,7 +52,7 @@ installr::updateR(TRUE)
   error messages.
 
 
-### macOS
+## macOS
 
 #### If you already have R and RStudio installed
 
@@ -80,7 +80,7 @@ installr::updateR(TRUE)
   error messages.
 
 
-### Linux
+## Linux
 
 * Follow the instructions for your distribution
   from [CRAN](https://cloud.r-project.org/bin/linux), they provide information
@@ -100,19 +100,34 @@ installr::updateR(TRUE)
   need to install the following dependencies: `libcurl4-openssl-dev libssl-dev libxml2-dev`
   (e.g. `sudo apt install libcurl4-openssl-dev libssl-dev libxml2-dev`).
 
-### For everyone
+## Install required R packages and Data
+During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages tidyverse, hexbin, patchwork, and RSQLite.
 
-**After installing R and RStudio, you need to install the `tidyverse` and `here` packages.**
+To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the `Enter` (Windows and Linux) or `Return` (MacOS) to execute the command.
 
-* After starting RStudio, at the console type:
-  `install.packages("tidyverse")` followed by the enter key. Once this has installed, type 
-  `install.packages("here")` followed by the enter key. Both packages should now be installed.
+~~~
+install.packages(c("tidyverse", "here", "hexbin", "patchwork", "RSQLite", "palmerpenguins"))
+~~~
+{: .language-r}
 
-* For reference, the lesson uses `SAFI_clean.csv`. The direct download link for
-this file is: <https://ndownloader.figshare.com/files/11492171>. To download
-from `R`:
+Alternatively, you can install the packages using RStudio’s graphical user interface by going to `Tools > Install Packages` and typing the names of the packages separated by a comma.
 
-`download.file("https://ndownloader.figshare.com/files/11492171","data/SAFI_clean.csv", mode = "wb")`
+R tries to download and install the packages on your machine. When the installation has finished, you can try to load the packages by pasting the following code into the console:
 
-* The [json episode](https://datacarpentry.org/r-socialsci/06-json/index.html) uses 
-`SAFI.json`. The downlink link is <https://datacarpentry.org/r-socialsci/data/SAFI.json>.
+~~~
+library(tidyverse)
+library(here)
+library(hexbin)
+library(patchwork)
+library(RSQLite)
+library(palmerpenguins)
+~~~
+{: .language-r}
+
+If you do not see an error like `there is no package called ‘...’` you are good to go!
+
+## Updating R packages
+
+Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bugfixes. To update the packages that you have installed, click `Update` in the `Packages` tab in the bottom right panel of RStudio, or go to `Tools > Check for Package Updates....`
+
+Sometimes, package updates introduce changes that break your old code, which can be very frustrating. To avoid this problem, you can use a package called renv. It locks the package versions you have used for a given project and makes it straightforward to reinstall those exact package version in a new environment, for example after updating your R version or on another computer. However, the details are outside of the scope of this lesson.
